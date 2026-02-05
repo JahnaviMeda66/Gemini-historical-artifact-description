@@ -7,7 +7,8 @@ from PIL import Image
 # Load environment variables
 load_dotenv()
 
-api_key = "AIzaSyALOUi-quE0djFZ7xNr_AnFT_ueOL8OkD8"
+#...API key is masked to prevent from misuse...#
+api_key = "AIzaSyALOUi-quE0djFZ7xNr_AnFT_ueOL8xxxx"
 genai.configure(api_key = api_key)
 
 
@@ -63,4 +64,5 @@ if submit:
     st.write(response)
 
    except Exception as e:
+
     st.error(f"⚠️ Error: {str(e)}")
